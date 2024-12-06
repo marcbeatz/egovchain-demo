@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/egovchain-demo',
-  assetPrefix: '/egovchain-demo/',
+  basePath: '/egovchain',
+  assetPrefix: '/egovchain/',
 };
 
 module.exports = nextConfig;
