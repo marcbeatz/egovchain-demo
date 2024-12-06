@@ -9,6 +9,7 @@
     "lint": "next lint",
     "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
   },
+  "homepage": "https://marcbeatz.github.io/egovchain-demo",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-dialog": "^1.1.2",

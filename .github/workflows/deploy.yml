@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write # Add this line to grant write permissions
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -27,12 +27,14 @@ jobs:
         run: npm run build
 
       - name: Add .nojekyll file
-        run: touch out/.nojekyll
+        run: |
+          touch out/.nojekyll
+          cp -r out/* out/egovchain-demo/ || true  # Create subdirectory for assets
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }} # Add this line
-          clean: true # Automatically remove deleted files from the deploy branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true

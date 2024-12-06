@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/egovchain-demo', // Replace with your repository name
-  assetPrefix: '/egovchain-demo/', // Replace with your repository name
+  basePath: '/egovchain-demo',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
