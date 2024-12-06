@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import bgHeader from '/assets/images/bg_header.svg';
 import { Button } from '../ui/button';
