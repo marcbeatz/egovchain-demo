@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Lexend } from 'next/font/google';
+import SplashScreen from '@/components/common/splash-screen';
 
 const lexend = Lexend({
   variable: '--font-lexend',
@@ -36,7 +37,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${lexend.variable} antialiased`}>{children}</body>
+      <body className={`${lexend.variable} antialiased`}>
+        <SplashScreen />
+        {children}
+      </body>
     </html>
   );
 }
