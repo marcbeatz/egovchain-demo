@@ -12,7 +12,7 @@ import { useScrollDetect } from '@/hooks/useScrollDetect';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isScrolled, scrollTop } = useScrollDetect();
+  const { isScrolled } = useScrollDetect();
 
   const navLinks = [
     { title: 'Home', href: '#home' },

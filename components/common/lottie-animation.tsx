@@ -10,7 +10,7 @@ const Lottie = dynamic(() => import('lottie-react'), {
 });
 
 interface LottieAnimationProps {
-  animationData: any;
+  animationData: string | object;
   loop?: boolean;
   autoplay?: boolean;
   className?: string;

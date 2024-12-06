@@ -53,7 +53,7 @@ const ContactUsSection = () => {
         <div>
           <h2 className='text-lg uppercase tracking-widest font-bold'>CONTACT US</h2>
           <h1 className='text-4xl font-bold'>
-            Let's Build a Brighter
+            {`Let's Build a Brighter`}
             <br />
             Future Together
           </h1>

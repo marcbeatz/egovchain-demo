@@ -46,6 +46,7 @@ const ContactForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values);
     // Handle form submission
     toast({
       title: 'Message sent successfully!',
