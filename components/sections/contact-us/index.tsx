@@ -51,20 +51,46 @@ const ContactUsSection = () => {
 
       <div className='container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-between gap-10'>
         <div>
-          <h2 className='text-lg uppercase tracking-widest font-bold'>CONTACT US</h2>
-          <h1 className='text-4xl font-bold'>
-            {`Let's Build a Brighter`}
-            <br />
-            Future Together
-          </h1>
+          <h2
+            style={{
+              fontWeight: 600,
+              fontSize: '20px',
+              letterSpacing: '.30em',
+              marginBottom: '16px',
+            }}
+          >
+            CONTACT US
+          </h2>
+          <h2
+            style={{
+              fontWeight: 600,
+              fontSize: '54px',
+              letterSpacing: '-3px',
+              lineHeight: '49px',
+              maxWidth: '550px',
+            }}
+          >{`Let's Build a Brighter Future Together`}</h2>
 
-          <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10'>
+          <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 max-w-[450px]'>
             {contactsArray.map((contact) => (
-              <div className='flex flex-col gap-5' key={contact.id}>
-                <h2 className='text-md font-bold tracking-widest uppercase'>{contact.title}</h2>
+              <div className='flex flex-col gap-[8px]' key={contact.id}>
+                <h2
+                  className='uppercase'
+                  style={{
+                    fontWeight: 700,
+                    fontSize: '14px',
+                    lineHeight: '22.4px',
+                    letterSpacing: '1.68px',
+                  }}
+                >
+                  {contact.title}
+                </h2>
                 <div className='flex flex-col gap-1'>
                   {contact.description.map((desc, index) => (
-                    <span key={index} className='text-sm'>
+                    <span
+                      key={index}
+                      style={{ fontWeight: 400, fontSize: '16px', lineHeight: '24px' }}
+                    >
                       {desc}
                     </span>
                   ))}

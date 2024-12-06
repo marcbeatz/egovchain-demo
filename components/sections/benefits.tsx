@@ -103,8 +103,19 @@ const BenefitsSection = () => {
       className='snap-section min-h-screen bg-background flex items-center justify-center py-32'
     >
       <div className='container mx-auto px-4'>
-        <h1 className='text-4xl font-bold text-center'>Key Benefits of eGovChain</h1>
-        <p className='mt-4 text-lg md:text-xl text-center'>
+        <h2
+          className='text-center'
+          style={{
+            fontSize: '54px',
+            fontWeight: 600,
+            lineHeight: '49px',
+            letterSpacing: '-4px',
+            textAlign: 'center',
+          }}
+        >
+          Key Benefits of eGovChain
+        </h2>
+        <p className='text-center' style={{ fontWeight: 300, fontSize: '20px' }}>
           Experience the transformative power of blockchain technology and zero-trust tokenization
           in government.
         </p>

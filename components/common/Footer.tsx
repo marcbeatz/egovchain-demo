@@ -14,7 +14,7 @@ const Footer = () => {
       id='footer'
       className='snap-section bg-custom-dark flex items-center justify-center py-32 text-background'
     >
-      <div className='container mx-auto px-4 flex flex-col md:flex-row md:flex-wrap items-center md:items-start gap-16'>
+      <div className='container mx-auto px-4 flex flex-col md:flex-row md:flex-wrap items-center md:items-start md:justify-between gap-16'>
         <Image
           src={republikaLogo}
           alt={'Republika Logo'}

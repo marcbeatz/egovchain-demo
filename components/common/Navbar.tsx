@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className='flex items-center'>
             <Link href='/'>
-              <Image src={eGovChainLogo} alt={'eGovChain Logo'} width={130} height={110} />
+              <Image src={eGovChainLogo} alt={'eGovChain Logo'} width={111.69} height={24} />
             </Link>
           </div>
 

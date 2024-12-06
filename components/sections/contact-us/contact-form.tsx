@@ -56,7 +56,7 @@ const ContactForm = () => {
   }
 
   return (
-    <Card className='w-full max-w-xl md:max-w-md p-5'>
+    <Card className='w-full max-w-[544px] p-[40px]'>
       <CardContent className='pt-5'>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>

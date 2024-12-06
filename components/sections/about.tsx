@@ -13,38 +13,54 @@ const AboutSection = () => {
       <div className='container px-4 flex'>
         <Image
           src={linesBoxes}
-          alt='Background'
+          alt='Lines and boxes'
           className='w-auto absolute top-32 left-0 -z-10 hidden md:block'
-          width={800}
+          width={572}
           height={800}
         />
 
-        <div className='ml-auto'>
-          <h2 className='text-lg uppercase tracking-widest font-bold'>ABOUT US</h2>
-          <h1 className='text-4xl font-bold'>
-            Your Trusted Partner in
-            <br />
-            Government Innovation
+        <div className='ml-auto max-w-[670px]'>
+          <h2
+            style={{
+              fontWeight: 600,
+              fontSize: '20px',
+              lineHeight: '25px',
+              letterSpacing: '0.3em',
+              marginBottom: '10px',
+            }}
+          >
+            ABOUT US
+          </h2>
+          <h1
+            style={{
+              fontSize: '54px',
+              fontWeight: 600,
+              lineHeight: '49px',
+              letterSpacing: '-3px',
+              marginBottom: '16px',
+            }}
+          >
+            Your Trusted Partner in Government Innovation
           </h1>
-          <p className='mt-4 text-lg md:text-xl'>
-            eGovChain is at the forefront of government
-            <br />
-            innovation, leveraging the power of blockchain
-            <br />
-            technology to deliver secure, transparent, and
-            <br />
-            efficient public services. Our mission is to empower
-            <br />
-            governments to build a future where trust,
-            <br />
-            accountability, and citizen satisfaction are
-            <br />
-            paramount.
+
+          <p
+            style={{
+              fontSize: '24px',
+              fontWeight: 300,
+              lineHeight: '30px',
+              marginBottom: '24px',
+              color: '#4B5563',
+            }}
+          >
+            eGovChain is at the forefront of government innovation, leveraging the power of
+            blockchain technology to deliver secure, transparent, and efficient public services. Our
+            mission is to empower governments to build a future where trust, accountability, and
+            citizen satisfaction are paramount.
           </p>
 
           <Button
             size={'sm'}
-            className='rounded-full bg-white border text-custom-blue border-custom-blue hover:bg-custom-blue hover:text-white mt-8'
+            className='rounded-full bg-white border text-custom-blue border-custom-blue hover:bg-custom-blue hover:text-white'
           >
             Get Started
             <ArrowRightCircle className='h-6 w-6' />
