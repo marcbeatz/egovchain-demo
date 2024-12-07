@@ -100,27 +100,23 @@ const BenefitsSection = () => {
   return (
     <section
       id='benefits'
-      className='snap-section min-h-screen bg-background flex items-center justify-center py-32'
+      className='snap-section min-h-screen bg-background flex items-center justify-center py-10 md:py-24'
     >
       <div className='container mx-auto px-4'>
         <h2
-          className='text-center'
+          className='text-center text-[38px] md:text-[54px] leading-[42px] md:leading-[49px] -tracking-[3px] md:-tracking-[4px]'
           style={{
-            fontSize: '54px',
             fontWeight: 600,
-            lineHeight: '49px',
-            letterSpacing: '-4px',
-            textAlign: 'center',
           }}
         >
           Key Benefits of eGovChain
         </h2>
-        <p className='text-center' style={{ fontWeight: 300, fontSize: '20px' }}>
+        <p className='text-center text-[18px] md:text-[20px]' style={{ fontWeight: 300 }}>
           Experience the transformative power of blockchain technology and zero-trust tokenization
           in government.
         </p>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8'>
           {benefitsCardArray.map((benefit) => (
             <Card key={benefit.id} className='border border-custom-light rounded-lg'>
               <CardHeader className='relative'>

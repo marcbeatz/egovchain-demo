@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className='snap-container scrollable-container'>
+      <main className='h-screen overflow-y-auto snap-container scrollable-container'>
         <HomeSection />
 
         <AboutSection />

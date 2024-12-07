@@ -76,13 +76,27 @@ html {
   scroll-behavior: smooth;
 }
 
-.snap-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
+@layer utilities {
+  /* Enable snap scrolling only on desktop */
+  @media (min-width: 768px) {
+    .snap-section {
+      scroll-snap-align: start;
+    }
 
-.snap-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+    .snap-container {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Disable snap scrolling on mobile */
+  @media (max-width: 767px) {
+    .snap-section {
+      scroll-snap-align: none;
+    }
+
+    .snap-container {
+      scroll-snap-type: none;
+    }
+  }
 }

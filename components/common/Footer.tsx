@@ -12,27 +12,34 @@ const Footer = () => {
   return (
     <section
       id='footer'
-      className='snap-section bg-custom-dark flex items-center justify-center py-32 text-background'
+      className='relative snap-section bg-custom-dark flex items-center justify-center py-20 md:py-32 text-background'
     >
-      <div className='container mx-auto px-4 flex flex-col md:flex-row md:flex-wrap items-center md:items-start md:justify-between gap-16'>
+      <div className='container mx-auto px-4 flex flex-col md:flex-row md:flex-wrap items-start md:justify-between gap-10 md:gap-16'>
         <Image
           src={republikaLogo}
           alt={'Republika Logo'}
-          width={200}
-          height={200}
-          className='opacity-30'
+          width={203.64}
+          height={224}
+          className='opacity-15 absolute md:relative top-5 right-5'
         />
 
         <div className='flex flex-col gap-5'>
-          <Image src={egovChainSemi} alt='eGovChain Semi Light' width={200} height={200} />
+          <Image
+            src={egovChainSemi}
+            alt='eGovChain Semi Light'
+            width={200}
+            height={200}
+            className='w-[98.92px] md:w-auto'
+          />
           <div className='flex flex-col gap-2'>
-            <p>Copyright © 2023 eGovChain.</p>
+            <p>Copyright © 2023</p>
+            <p>DICT Services</p>
             <p>All Rights Reserved</p>
           </div>
         </div>
 
         <div className='flex flex-col gap-5'>
-          <h2 className='text-lg font-bold uppercase'>About Us</h2>
+          <h2 className='text-[14px] md:text-[16px] font-bold uppercase'>About Us</h2>
           <div className='flex flex-col gap-2'>
             <Link href='/terms'>Terms & Conditions</Link>
             <Link href='/privacy'>Privacy Policy</Link>
@@ -41,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col gap-5'>
-          <h2 className='text-lg font-bold uppercase'>FOLLOW US</h2>
+          <h2 className='text-[14px] md:text-[16px] font-bold uppercase'>FOLLOW US</h2>
           <div className='flex gap-5'>
             <Link href='#'>
               <FaFacebook className='w-5 h-5' />
@@ -56,8 +63,8 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col gap-5'>
-          <h2 className='text-lg font-bold uppercase'>DEVELOPED BY</h2>
-          <Image src={dict} alt='DICT' width={200} className='h-auto' />
+          <h2 className='text-[14px] md:text-[16px] font-bold uppercase'>DEVELOPED BY</h2>
+          <Image src={dict} alt='DICT' width={152.33} height={65.81} className='h-auto' />
         </div>
       </div>
     </section>

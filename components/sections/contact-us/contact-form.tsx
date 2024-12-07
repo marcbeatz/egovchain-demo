@@ -16,7 +16,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
-import { ArrowRightCircle } from 'lucide-react';
+import { FaCircleArrowRight } from 'react-icons/fa6';
 
 // Form validation schema
 const formSchema = z.object({
@@ -56,7 +56,7 @@ const ContactForm = () => {
   }
 
   return (
-    <Card className='w-full max-w-[544px] p-[40px]'>
+    <Card className='w-full p-3s md:p-[40px]'>
       <CardContent className='pt-5'>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
@@ -117,7 +117,7 @@ const ContactForm = () => {
               className='bg-custom-blue text-white hover:bg-custom-blue/80 rounded-full'
             >
               Send Message
-              <ArrowRightCircle className='h-6 w-6' />
+              <FaCircleArrowRight className='h-6 w-6' />
             </Button>
           </form>
         </Form>

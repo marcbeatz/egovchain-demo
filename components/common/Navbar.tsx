@@ -9,6 +9,7 @@ import CustomNavLink from './CustomNavLink';
 import Image from 'next/image';
 import eGovChainLogo from '/assets/images/egovchain_logo.svg';
 import { useScrollDetect } from '@/hooks/useScrollDetect';
+import bp from '/assets/images/bp_logo.svg';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
     { title: 'Benefits', href: '#benefits' },
     { title: 'Highlights', href: '#highlights' },
     { title: 'Contact Us', href: '#contact' },
-    { title: 'Developers', href: '/developers' },
+    // { title: 'Developers', href: '/developers' },
   ];
 
   return (
@@ -69,9 +70,18 @@ const Navbar = () => {
           <div className='md:hidden'>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant='ghost' size='icon'>
-                  <Menu className='h-6 w-6' />
-                </Button>
+                <div className='flex items-center gap-[8px]'>
+                  <Image
+                    src={bp}
+                    alt={'Bagong Pilipinas'}
+                    width={38.86}
+                    height={32}
+                    className='md:hidden'
+                  />
+                  <Button variant='ghost' size='icon'>
+                    <Menu className='h-6 w-6' />
+                  </Button>
+                </div>
               </SheetTrigger>
               <SheetContent side='right'>
                 <SheetTitle className='sr-only'>Navigation Menu</SheetTitle>

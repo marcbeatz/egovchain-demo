@@ -9,19 +9,16 @@ const HighlightsSection = () => {
   return (
     <section
       id='highlights'
-      className='snap-section min-h-screen flex items-center justify-center py-32'
+      className='snap-section min-h-screen flex items-center justify-center py-10 md:py-32'
     >
       <div className='container mx-auto px-4'>
-        <h1
-          style={{ fontWeight: 600, fontSize: '54px', letterSpacing: '-3px', marginBottom: '16px' }}
-          className='text-center'
+        <h2
+          style={{ fontWeight: 600 }}
+          className='text-center text-[36px] md:text-[54px] -tracking-[3px] mb-[16px]'
         >
           Powering eGovernment Platforms
-        </h1>
-        <p
-          className='text-center'
-          style={{ fontWeight: 300, fontSize: '20px', marginBottom: '58px' }}
-        >
+        </h2>
+        <p className='text-center text-[18px] md:text-[20px] mb-[40px]' style={{ fontWeight: 300 }}>
           Discover the government services enhanced by eGovChain.
         </p>
 

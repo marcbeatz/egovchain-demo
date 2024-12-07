@@ -30,7 +30,7 @@ const ContactUsSection = () => {
   return (
     <section
       id='contact'
-      className='snap-section min-h-screen flex items-center justify-center relative overflow-hidden py-32'
+      className='snap-section min-h-screen flex items-center justify-center relative overflow-hidden py-10 md:py-32'
     >
       {/* Background Image wrapper */}
       <div className='absolute inset-0'>
@@ -52,55 +52,50 @@ const ContactUsSection = () => {
       <div className='container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-between gap-10'>
         <div>
           <h2
-            style={{
-              fontWeight: 600,
-              fontSize: '20px',
-              letterSpacing: '.30em',
-              marginBottom: '16px',
-            }}
+            style={{ fontWeight: 600 }}
+            className='text-[16px] md:text-[20px] tracking-[.3em] mb-[16px]'
           >
             CONTACT US
           </h2>
           <h2
-            style={{
-              fontWeight: 600,
-              fontSize: '54px',
-              letterSpacing: '-3px',
-              lineHeight: '49px',
-              maxWidth: '550px',
-            }}
+            style={{ fontWeight: 600 }}
+            className='text-[36px] md:text-[54px] -tracking-[3px] leading-[42px] md:leading-[49px] md:max-w-[550px]'
           >{`Let's Build a Brighter Future Together`}</h2>
 
-          <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 max-w-[450px]'>
-            {contactsArray.map((contact) => (
-              <div className='flex flex-col gap-[8px]' key={contact.id}>
-                <h2
-                  className='uppercase'
-                  style={{
-                    fontWeight: 700,
-                    fontSize: '14px',
-                    lineHeight: '22.4px',
-                    letterSpacing: '1.68px',
-                  }}
-                >
-                  {contact.title}
-                </h2>
-                <div className='flex flex-col gap-1'>
-                  {contact.description.map((desc, index) => (
-                    <span
-                      key={index}
-                      style={{ fontWeight: 400, fontSize: '16px', lineHeight: '24px' }}
-                    >
-                      {desc}
-                    </span>
-                  ))}
+          <div className='flex flex-col-reverse mt-[40px] gap-[40px]'>
+            <div className='flex flex-wrap gap-10 md:gap-10 md:max-w-[450px]'>
+              {contactsArray.map((contact) => (
+                <div className='flex flex-col gap-[8px]' key={contact.id}>
+                  <h2
+                    className='uppercase text-[12px] md:text-[14px] leading-[22.4px] tracking-[1.68px]'
+                    style={{ fontWeight: 700 }}
+                  >
+                    {contact.title}
+                  </h2>
+                  <div className='flex flex-col gap-1'>
+                    {contact.description.map((desc, index) => (
+                      <span
+                        key={index}
+                        style={{ fontWeight: 400 }}
+                        className='text-[14px] md:text-[16px] leading-[19px] md:leading-[24px]'
+                      >
+                        {desc}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            <div className='md:hidden'>
+              <ContactForm />
+            </div>
           </div>
         </div>
 
-        <ContactForm />
+        <div className='hidden md:block md:w-[544px]'>
+          <ContactForm />
+        </div>
       </div>
     </section>
   );
