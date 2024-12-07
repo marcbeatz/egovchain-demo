@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/egovchain-demo',
   images: {
     unoptimized: true,
   },
-  basePath: '/egovchain-demo',
-  trailingSlash: true,
+  assetPrefix: '/egovchain-demo/',
 };
 
 module.exports = nextConfig;
