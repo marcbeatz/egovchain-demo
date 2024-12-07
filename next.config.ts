@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath: '/egovchain-demo',
-  // trailingSlash: true,
+  basePath: '/egovchain-demo',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
